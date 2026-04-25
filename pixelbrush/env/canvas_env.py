@@ -75,7 +75,7 @@ class CanvasEnv(gym.Env):
             y_start, y_end = max(0, y-2), min(self.canvas_size, y+2)
             region = self.canvas[x_start:x_end, y_start:y_end].astype(np.float32)
             color_float = color.astype(np.float32)
-            blended = (region * 0.5 + color_float * 0.5).astype(np.uint8)
+            blended = np.clip(region * 0.5 + color_float * 0.5, 0, 255).astype(np.uint8)
             self.canvas[x_start:x_end, y_start:y_end] = blended
             
         self.stroke_count += 1

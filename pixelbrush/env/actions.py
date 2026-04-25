@@ -10,6 +10,9 @@ class ActionHandler:
         """
         Decodes a discrete action index into (type, x, y, color_idx).
         """
+        if action_idx < 0 or action_idx >= self.action_space_size:
+            raise ValueError(f"Action index {action_idx} out of range [0, {self.action_space_size-1}]")
+            
         color_idx = action_idx % self.palette_size
         remaining = action_idx // self.palette_size
         y = remaining % self.canvas_size
