@@ -1,0 +1,30 @@
+# PixelBrush Configuration
+training:
+  max_episodes: 10000
+  max_strokes: 12
+  update_every: 256
+  save_every: 500
+  lr: 3e-4
+  temp_start: 1.0
+  temp_end: 0.05
+  temp_anneal_steps: 8000
+  device: "cuda"
+
+env:
+  canvas_size: 32
+  palette_size: 8
+  action_space: 24576
+
+reward:
+  clip_model: "ViT-B/32"
+  upscale_size: 224
+  baseline_alpha: 0.005
+
+agent:
+  cnn_channels: [32, 64, 128]
+  fc_dim: 2048
+  clip_embed_dim: 512
+  ppo_clip_epsilon: 0.2
+  gae_gamma: 0.99
+  gae_lambda: 0.95
+  entropy_bonus: 0.01

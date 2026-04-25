@@ -1,0 +1,30 @@
+# Concept -> List of 8 RGB tuples (0-255)
+sunset:
+  - [255, 87, 51]   # Orange-Red
+  - [255, 195, 0]   # Yellow
+  - [199, 0, 57]    # Crimson
+  - [144, 12, 63]   # Deep Purple
+  - [88, 24, 69]    # Dark Violet
+  - [255, 131, 0]   # Bright Orange
+  - [44, 62, 80]    # Midnight Blue
+  - [236, 240, 241] # Cloud White
+
+foggy_mountain:
+  - [127, 140, 141] # Gray
+  - [189, 195, 199] # Light Gray
+  - [44, 62, 80]    # Slate
+  - [52, 73, 94]    # Dark Slate
+  - [149, 165, 166] # Silver
+  - [236, 240, 241] # Fog White
+  - [26, 188, 156]  # Pine Green
+  - [22, 160, 133]  # Deep Teal
+
+forest:
+  - [34, 139, 34]   # Forest Green
+  - [0, 100, 0]     # Dark Green
+  - [107, 142, 35]  # Olive
+  - [139, 69, 19]   # Brown
+  - [160, 82, 45]   # Sienna
+  - [244, 164, 96]  # Sandy Brown
+  - [173, 216, 230] # Sky Blue
+  - [255, 255, 240] # Ivory
